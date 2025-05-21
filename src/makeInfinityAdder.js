@@ -6,7 +6,7 @@
 function makeInfinityAdder() {
   let amount = 0;
   const adder = (elem) => {
-    if (typeof elem !== 'number') {
+    if (elem === undefined) {
       const result = amount;
 
       amount = 0;
